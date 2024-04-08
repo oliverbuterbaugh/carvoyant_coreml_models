@@ -18,7 +18,7 @@ Bank holidays are accounted for as there have been two similarly behaving instan
 
 Drag each .mlmodel file into the sidebar, ensuring they're added to the target. On build, a class for each model will be automatically generated. You can then make a simple call to the model using the built-in input class.
 
-```
+```swift
 import CoreML
 
 let model = try GREENST(configuration: MLModelConfiguration())
@@ -37,7 +37,8 @@ print(Int(result.Available_Spaces))
 ```
 
 For an app playground, which doesn't natively support .mlmodel resources and therefore won't generate the model class, use a dummy Xcode project to build and generate the class, then copy it into your app playground. Change the urlOfModelInThisBundle class to this in order to get it working on the iPad Playground app:
-```
+
+```swift
 class var urlOfModelInThisBundle : URL {
   let resPath = Bundle(for: self).url(forResource: "GREENST", withExtension: "mlmodel")!
   return try! MLModel.compileModel(at: resPath)
