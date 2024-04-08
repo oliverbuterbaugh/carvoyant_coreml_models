@@ -47,14 +47,9 @@ class var urlOfModelInThisBundle : URL {
 
 ## Paramaters
 
-IsHalfTerm - 1 for inside half term, 0 for outside
-
-Precipitation - hourly rain fall in mm
-
-WindSpeed - hourly wind speed in km
-
-DayOfWeek - 0 for monday through 6 for sundayn
-
-MinutesPastMidnight - the time in minutes
-
-WeekdayWeekend - 1 for weekday, 0 for weekend
+- IsHalfTerm: 1 for inside half term, 0 for outside
+- Precipitation: hourly rain fall in mm
+- WindSpeed: hourly wind speed in km
+- DayOfWeek: 0 for monday through 6 for sundayn
+- MinutesPastMidnight: the time in minutes
+- WeekdayWeekend: 1 for weekday, 0 for weekend
