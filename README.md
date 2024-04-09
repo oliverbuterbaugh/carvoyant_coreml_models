@@ -1,5 +1,7 @@
 # carvoyant_models
 
+Download the app here: https://apps.apple.com/us/app/Carvoyant/id6480128871
+
 ## Intro
 
 The Carvoyant iOS app utilises tree ensemble regression models to predict carpark availability based on time, day of week, school term status, and weather conditions.
